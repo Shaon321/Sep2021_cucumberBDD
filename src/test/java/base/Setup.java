@@ -23,6 +23,7 @@ public class Setup {
             WebDriverManager.iedriver().setup();
             driver = new InternetExplorerDriver();
         }
+
         // edge
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
