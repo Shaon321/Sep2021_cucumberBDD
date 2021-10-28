@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="5588" started-at="2021-10-28T09:47:54 PDT" finished-at="2021-10-28T09:48:00 PDT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@23e028a9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="5588" started-at="2021-10-28T09:47:54 PDT" finished-at="2021-10-28T09:48:00 PDT">
+      <class name="TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@23e028a9]" name="setUpClass" is-config="true" duration-ms="201" started-at="2021-10-28T09:47:54 PDT" finished-at="2021-10-28T09:47:54 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@23e028a9]" name="runScenario" duration-ms="5304" started-at="2021-10-28T09:47:54 PDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-28T09:48:00 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Student should be able to register with valid info"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Thank you for sign up] but found [Thank you for sign up, here your id - TTCfGwIx]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Thank you for sign up] but found [Thank you for sign up, here your id - TTCfGwIx]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at pageObject.signup_page.getThankYouMsg(signup_page.java:91)
+at stepDef.signup_steps.iShouldSeeThankYouForSignUpMessage(signup_steps.java:41)
+at ✽.I should see Thank You for sign up message(file:///C:/Users/lmakn/Documents/TalentTEK/Git/Sep2021_cucumberBDD/src/test/java/features/signup.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@23e028a9]" name="tearDownClass" is-config="true" duration-ms="68" started-at="2021-10-28T09:48:00 PDT" finished-at="2021-10-28T09:48:00 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

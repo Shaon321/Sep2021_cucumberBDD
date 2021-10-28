@@ -4,6 +4,10 @@ import base.Setup;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.testng.util.Strings;
+import io.cucumber.java.Scenario;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 
 public class Hook extends Setup {
 
@@ -43,8 +47,17 @@ public class Hook extends Setup {
     }
 
     @After
-    public void endTest() {
+    public void endTest(Scenario scenario) {
         // happen after each test
         // what happen if test fails? what you will do for the  failing test case? screenshot? logs? ??
+                  try {
+                if (scenario.isFailed()){
+                    final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                    // embed it in the report.
+                    scenario.attach(screenshot, "image/png", scenario.getName());
+                }
+            } finally {
+                //driver.quit();
+            }
     }
 }

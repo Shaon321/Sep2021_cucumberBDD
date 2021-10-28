@@ -22,7 +22,7 @@ public class profile_page extends Setup {
 
     // Function
     public void successfullMsg(){
-        String expMsg = "Welcome to TalentTek";
+        String expMsg = "Welcome 2 TalentTek";
         String actMsg = getMessage.getText();
         Assert.assertEquals(expMsg, actMsg);
        // getMessage.getText();
