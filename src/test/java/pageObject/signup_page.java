@@ -11,6 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
+import java.util.List;
+
 public class signup_page extends Setup {
 
     public signup_page (WebDriver driver){
@@ -35,7 +37,9 @@ public class signup_page extends Setup {
     public WebElement day;
     @FindBy(how = How.NAME, using = "year")
     public WebElement year;
-    @FindBy(how = How.XPATH, using = "//label[4]/input[@id=\"female\"]")
+//    @FindBy(how = How.XPATH, using = "//label[4]/input[@id=\"female\"]")
+//    public WebElement gender;
+    @FindBy(how= How.NAME, using = "gender")
     public WebElement gender;
     @FindBy(how = How.NAME, using = "agree")
     public WebElement agree;
@@ -77,8 +81,16 @@ public class signup_page extends Setup {
         selectYear.selectByVisibleText(yearValue);
     }
     public void selectGender(){
-        gender.click();
-    }
+        List<WebElement> radioButtons = gender.findElements(By.xpath("//input[@type = 'radio']"));
+        int size = radioButtons.size();
+        for(int i=0; i<size; i++){
+            WebElement genderChoice = radioButtons.get(i);
+            String selectedValue = genderChoice.getAttribute("value");
+            if (selectedValue.equalsIgnoreCase("Female")) {
+                genderChoice.click();
+            }
+        }
+        }
     public void agreeChkBox(){
         agree.click();
     }
@@ -91,4 +103,13 @@ public class signup_page extends Setup {
         Assert.assertEquals(exp, act);
 
     }
+
+
+//    int size = radioButtons.size();
+//        for(WebElement radio : radioButtons) {
+//        String selectedValue = radio.getAttribute("value");
+//        if (radio.isSelected()) {
+//            selectedValue.equalsIgnoreCase("Female");
+//            radio.click();
+//        }
 }
