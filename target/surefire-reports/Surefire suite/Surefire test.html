@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 28 14:04:51 PDT 2021</td>
+<td>Started on:</td><td>Wed Nov 10 18:11:20 PST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6570 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5029 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,32 +67,17 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Student should be able to register with valid info", "Optional[Sign up]"</td>
-<td><div><pre>java.lang.AssertionError: expected [Thank you for sign up] but found [Thank you for sign up, here your id - TTCQj57u]
-	at pageObject.signup_page.getThankYouMsg(signup_page.java:103)
-	at stepDef.signup_steps.iShouldSeeThankYouForSignUpMessage(signup_steps.java:41)
-	at ?.I should see Thank You for sign up message(file:///C:/Users/lmakn/Documents/TalentTEK/Git/Sep2021_cucumberBDD/src/test/java/features/signup.feature:8)
-... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1653341711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1653341711'><pre>java.lang.AssertionError: expected [Thank you for sign up] but found [Thank you for sign up, here your id - TTCQj57u]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at pageObject.signup_page.getThankYouMsg(signup_page.java:103)
-	at stepDef.signup_steps.iShouldSeeThankYouForSignUpMessage(signup_steps.java:41)
-	at ?.I should see Thank You for sign up message(file:///C:/Users/lmakn/Documents/TalentTEK/Git/Sep2021_cucumberBDD/src/test/java/features/signup.feature:8)
-</pre></div></td>
-<td>6</td>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid email and password", "Optional[Login Feature Test]"</td>
+<td></td>
+<td>4</td>
 <td>TestRunner@23e028a9</td></tr>
 </table><p>
 </body>

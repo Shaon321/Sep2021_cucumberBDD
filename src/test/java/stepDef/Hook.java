@@ -9,7 +9,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 
-public class Hook extends Setup {
+public class
+Hook extends Setup {
 
     public static String email;
     public static String password;

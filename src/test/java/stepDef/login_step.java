@@ -3,13 +3,16 @@ package stepDef;
 import base.Setup;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 import pageObject.login_page;
+import pageObject.profile_page;
 
 public class login_step extends Setup {
 
     login_page login = new login_page(driver);
+    profile_page profile = new profile_page(driver);
 
     @Given("I am at TalentTEK Homepage")
     public void iAmAtTalentTEKHomepage() {
@@ -41,4 +44,5 @@ public class login_step extends Setup {
     public void iClickCreateNewAccountButtonInLoginPage() {
         login.clickCreateNewAccountBtn();
     }
+
 }

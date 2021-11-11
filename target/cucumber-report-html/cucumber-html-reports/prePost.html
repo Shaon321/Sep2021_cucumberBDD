@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Sept2021_cucumberBDD</td>
                           <td>1</td>
-                        <td>28 Oct 2021, 14:05</td>
+                        <td>10 Nov 2021, 18:11</td>
           </tr>
         </tbody>
       </table>
@@ -123,17 +123,17 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@prePost</td>
-                    <td >0</td>
-          <td  class="failed"    >1</td>
+                    <td  class="passed"    >1</td>
+          <td >0</td>
           <td class="total">1</td>
-          <td      class="passed"    >4</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >5</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">5</td>
-          <td class="duration" data-value="2358000000">2s 358ms</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="829000000">829ms</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -152,22 +152,23 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="file-src-test-java-features-signup-feature.html">View Feature</a> <i>Sign up</i>
+      <a href="file-src-test-java-features-login-feature.html">View Feature</a> <i>Login Feature Test</i>
     </div>
   
   
 <div class="tags indention">
-       <a href="qa.html">@qa</a>
+       <a href="login.html">@login</a>
+       <a href="smoke.html">@smoke</a>
+       <a href="regression.html">@regression</a>
        <a href="prePost.html">@prePost</a>
-       <a href="signup.html">@signup</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Student should be able to register with valid info</span>
+  <span class="name">Login with valid email and password</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -176,7 +177,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -197,7 +198,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">stepDef.Hook.startTest()</span>
                         
-  <span class="lead-duration duration">3s 478ms</span>
+  <span class="lead-duration duration">3s 773ms</span>
 
           </div>
 
@@ -213,9 +214,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -225,14 +226,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I am at TalentTEK Homepage</span>
   
-  <span class="lead-duration duration">040ms</span>
+  <span class="lead-duration duration">023ms</span>
 
   </div>
 
@@ -251,9 +252,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I click Create New Account Button in Login Page</span>
+  <span class="name">I enter a valid email address</span>
   
-  <span class="lead-duration duration">384ms</span>
+  <span class="lead-duration duration">089ms</span>
 
   </div>
 
@@ -272,9 +273,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I enter a Student information</span>
+  <span class="name">I enter a valid password</span>
   
-  <span class="lead-duration duration">1s 640ms</span>
+  <span class="lead-duration duration">089ms</span>
 
   </div>
 
@@ -293,9 +294,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">I click on Create my new account button</span>
+  <span class="name">I click on Login Button</span>
   
-  <span class="lead-duration duration">065ms</span>
+  <span class="lead-duration duration">073ms</span>
 
   </div>
 
@@ -312,36 +313,15 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should see Thank You for sign up message</span>
+  <span class="name">I should be able to successfully log in</span>
   
-  <span class="lead-duration duration">229ms</span>
+  <span class="lead-duration duration">555ms</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Error message</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>java.lang.AssertionError: expected [Thank you for sign up] but found [Thank you for sign up, here your id - TTCQj57u]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at pageObject.signup_page.getThankYouMsg(signup_page.java:103)
-	at stepDef.signup_steps.iShouldSeeThankYouForSignUpMessage(signup_steps.java:41)
-	at ✽.I should see Thank You for sign up message(file:///C:/Users/lmakn/Documents/TalentTEK/Git/Sep2021_cucumberBDD/src/test/java/features/signup.feature:8)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -358,7 +338,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -370,13 +350,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">stepDef.Hook.endTest(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">208ms</span>
+  <span class="lead-duration duration">002ms</span>
 
           </div>
 
@@ -384,17 +364,6 @@ $(document).ready(function() {
 
           
           
-  <div class="embeddings inner-level">
-                <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_1686712505" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_1686712505.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
-    </div>
-    <div id="embedding_embedding_1686712505" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_1686712505.png"></span>
-    </div>
-  </div>
-        </div>
 
         </div>
           </div>

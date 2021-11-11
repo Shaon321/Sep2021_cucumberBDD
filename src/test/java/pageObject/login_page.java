@@ -16,7 +16,7 @@ public class login_page extends Setup {
 
     // locators
     @FindBy(how= How.NAME, using = "email")
-    public WebElement emailLocator;
+    private WebElement emailLocator;
     @FindBy(how= How.NAME, using = "password")
     public WebElement passwordLocator;
     @FindBy(how= How.CLASS_NAME, using = "my-login")

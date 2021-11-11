@@ -37,8 +37,6 @@ public class signup_page extends Setup {
     public WebElement day;
     @FindBy(how = How.NAME, using = "year")
     public WebElement year;
-//    @FindBy(how = How.XPATH, using = "//label[4]/input[@id=\"female\"]")
-//    public WebElement gender;
     @FindBy(how= How.NAME, using = "gender")
     public WebElement gender;
     @FindBy(how = How.NAME, using = "agree")
@@ -89,7 +87,7 @@ public class signup_page extends Setup {
             if (selectedValue.equalsIgnoreCase("Female")) {
                 genderChoice.click();
             }
-        }
+         }
         }
     public void agreeChkBox(){
         agree.click();
