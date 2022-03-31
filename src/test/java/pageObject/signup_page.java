@@ -63,6 +63,7 @@ public class signup_page extends Setup {
     public void enterConfirmPassword(String confirmPasswordValue){
         confirmPassword.sendKeys(confirmPasswordValue);
     }
+
     public void enterMonth(String monthValue){
         Select selectMonth = new Select(month);
         selectMonth.selectByVisibleText(monthValue);
