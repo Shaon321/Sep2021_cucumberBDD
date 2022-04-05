@@ -11,6 +11,8 @@ Fix code in Windows
 CMD+A CTL+I
 
 How to execute test in CMD
+mvn verify --- to run whole TC
+
 mvn verify -Denv=qa -Dbrowser=ff -Dcucumber.filter.tags="@login"
 
 mvn verify -Denv=qa -Dbrowser=ch -Dcucumber.filter.tags="@login"

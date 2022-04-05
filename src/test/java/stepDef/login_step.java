@@ -26,6 +26,7 @@ public class login_step extends Setup {
     @And("I enter a valid email address")
     public void iEnterAValidEmailAddress() {
         login.enterEmailAddress(Hook.email);
+
     }
 
     @And("I enter a valid password")

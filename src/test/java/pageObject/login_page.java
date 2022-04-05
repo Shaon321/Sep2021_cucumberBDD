@@ -16,7 +16,7 @@ public class login_page extends Setup {
 
     // locators
     @FindBy(how= How.NAME, using = "email")
-    private WebElement emailLocator;
+    public WebElement emailLocator;
     @FindBy(how= How.NAME, using = "password")
     public WebElement passwordLocator;
     @FindBy(how= How.CLASS_NAME, using = "my-login")
@@ -28,7 +28,7 @@ public class login_page extends Setup {
     public void enterEmailAddress(String email){
         emailLocator.sendKeys(email);
     }
-    public void enterPassword(String pass){
+    public void enterPassword(String pass){ //Hook.password (Hook -> login_step -> login_page -> sendkeys)
         passwordLocator.sendKeys(pass);
     }
 
