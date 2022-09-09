@@ -31,7 +31,7 @@ public class Hook extends Setup {
         switch (envData) {
             case "qa":
                 url = "http://qa.taltektc.com";
-                email = "abc1234@gmail.com";
+                email = "abc321@gmail.com";
                 password = "Abc1234";
                 //email = "qatest@gmail.com";
                // password = "Test12345";
